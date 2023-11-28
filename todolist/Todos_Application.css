@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.to-do-application {
+    padding: 20px;
+    background-image: url("https://t4.ftcdn.net/jpg/02/68/80/71/240_F_268807166_oPVMMlJcxy4OjBDkl9JPxqfJeMC98yNm.jpg");
+    background-size: cover;
+}
+
+.input-element-box {
+    height: 40px;
+    width: 69%;
+    border-radius: 20px;
+    padding: 10px;
+    border-width: 0px;
+}
+
+.todos-main-heading {
+    font-family: "Roboto";
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.my-task-heading {
+    font-family: "Roboto";
+    font-size: 30px;
+
+}
+
+.create-task-heading {
+    font-family: "Roboto";
+    font-size: 30px;
+    color: #5174f5;
+
+}
+
+.wish-heading {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.wishing-span-heading {
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 23px;
+    color: #2d075e;
+}
+
+.my-task-span-heading {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.create-task-span-heading {
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #edb928;
+}
+
+
+.add-button {
+    color: white;
+    background-color: #d9ad34;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-width: 0px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.add-button i {
+    transition: all 0.2s ease-in-out;
+}
+
+.add-button:hover .warpper {
+    animation: fly 0.6s ease-in-out infinite alternate;
+}
+
+.add-button:hover i {
+    transform: translateX(0.2em) rotate(-90deg) scale(1.2);
+}
+
+.button:hover span {
+    transform: translateX(5em);
+}
+
+.add-button:active {
+    transform: scale(0.95);
+}
+
+.add-button:hover {
+    background-color: #695b64;
+}
+
+@keyframes fly {
+    from {
+        transform: translativeX(0.1em);
+    }
+
+    to {
+        transform: tanslativeX(-0.1em);
+    }
+}
+
+.login-button {
+    background-color: transparent;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-width: 2px;
+    border-radius: 4px;
+    margin-left: 25%;
+}
+
+.save-button {
+    color: white;
+    background-color: #1877f2;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-width: 0px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #1d752d;
+}
+
+
+.list-container {
+    list-style-type: none;
+}
+
+.input-box {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-right: 12px;
+
+}
+
+
+.label-container {
+    background-color: #e6f6ff;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #096f92;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+}
+
+.task-container {
+    padding: 0px;
+}
+
+.label-text {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    width: 82%;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.delete-icon-container {
+    text-align: right;
+    width: 18%;
+}
+
+.delete-icon {
+    padding: 13px;
+}
+
+.checked {
+    text-decoration: line-through;
+}
